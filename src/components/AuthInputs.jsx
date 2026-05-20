@@ -36,7 +36,7 @@ export default function AuthInputs() {
       <ControlContainer>
         <CustomInput
           label="Email"
-          $invalid={emailNotValid}
+          invalid={emailNotValid}
           type="email"
           // style={{
           //   backgroundColor: emailNotValid ? "#fed2d2" : "#d1d5db",
@@ -45,7 +45,7 @@ export default function AuthInputs() {
         />
         <CustomInput
           label="Password"
-          $invalid={passwordNotValid}
+          invalid={passwordNotValid}
           type="password"
           onChange={(event) =>
             handleInputChange("password", event.target.value)
